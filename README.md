@@ -13,11 +13,6 @@ It will compose mostly of diagrams, explanations, descriptions, scripts, and con
 
 ## Stack & Tools 
 
-<table>
-  <tr>
-    <!-- Left Side: Technical Details -->
-    <td width="50%" valign="center">
-
 | Category | Tool |
 | --- | --- |
 | **SIEM** | Wazuh |
@@ -25,6 +20,13 @@ It will compose mostly of diagrams, explanations, descriptions, scripts, and con
 | **Virtualization** | Proxmox VE <br> Hyper-V |
 | **Versioning** | Git/Github |
 | **OS** | Windows 11 <br> Ubuntu LTS <br> Debian <br> macOS |
+
+<table>
+  <tr>
+    <!-- Left Side: Technical Details -->
+    <td width="50%" valign="center">
+
+
 
 </td>
 <!-- Right Side: Photo Grid -->
