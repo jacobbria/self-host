@@ -21,5 +21,14 @@ are many - and because the Debian build is simplier.
 
   ### Figure 1: CPU Resources Used
 
+</div>
+
+In the end the scan was successful.
+
+<div align="center">
+
+  ### Figure 2: Ubuntu Credentialed Scan
+  <img width="1391" height="228" alt="image" src="https://github.com/user-attachments/assets/c414b73a-c623-4111-b878-db45702728cb" />
+
 
 </div>
