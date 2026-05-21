@@ -2,13 +2,12 @@
 <img width="2400" height="700" alt="image" src="https://github.com/user-attachments/assets/00c31442-5ac2-404c-be34-5faea23d974d" />
 
 ### Security Landing
-> Secure Project Resources
-</div>
-
 <div align="center">
   
 ### Table of Contents
 <details>
+
+
 <summary><b> Risk Assessment</b></summary>
   
 <div align="center">
@@ -28,7 +27,7 @@
   
 </div>
 
-
+------------------
 ### Goals
 - [ ] Deploy SIEM & XDR to monitor network endpoints
 - [ ] Deploy scheduled vulnerability management tools
@@ -37,7 +36,8 @@
 
 
 <div align="center">
-  
+
+  ---------------------
 ### Security Stack & Tools
 | Genre | Tool |
 | --- | --- |
