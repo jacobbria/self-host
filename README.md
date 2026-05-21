@@ -11,7 +11,7 @@ It will compose mostly of diagrams, explanations, descriptions, scripts, and con
 
 
 ## Quick Access
-* [Security & Vulnerability](https://github.com/jacobbria/self-host/tree/main/security)
+* [Security & Vulnerability](security/security-README.md)
 
 ## Stack & Tools 
 
