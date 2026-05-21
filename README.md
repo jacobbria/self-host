@@ -6,10 +6,7 @@ It will compose mostly of diagrams, explanations, descriptions, scripts, and con
 
 
 ## Quick Access
-- Server Management
-- Application Management
-- Application Development
-- Securing The Project
+* [Security & Vulnerability](https://github.com/jacobbria/self-host/tree/main/security)
 
 ## Stack & Tools 
 
