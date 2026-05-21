@@ -5,10 +5,15 @@
 > Secure Project Resources
 </div>
 
+### Table of Contents
+
+
 ### Goals
 - [ ] Deploy SIEM & XDR to monitor network endpoints
 - [ ] Deploy scheduled vulnerability management tools
 - [ ] Pass CompTIA CySA+ Certification Exam
+
+
 
 <div align="center">
   
