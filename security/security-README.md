@@ -5,7 +5,28 @@
 > Secure Project Resources
 </div>
 
+<div align="center">
+  
 ### Table of Contents
+<details>
+<summary><b> Risk Assessment</b></summary>
+  
+<div align="center">
+  
+[NIST 800-30 Risk Assessment](/800-30.md)
+</div>
+</details>
+
+<details>
+<summary><b> Vulnerability Management </b></summary>
+<div align="center">
+  
+[Vulnerability Scanning](/Vulnerability-Scanning.md)
+</div>
+</details>
+
+  
+</div>
 
 
 ### Goals
