@@ -16,5 +16,7 @@ feature is not enabled on Nessus Essentials. So, instead an external scan of a W
 This gives less details for detecting vulnerabities but does give a different scan perspective which aligns
 much more closely with what an external observer on the network would see. 
 
+### Set-up
 
+External agent-less scans are much easier to get set up. 
 
