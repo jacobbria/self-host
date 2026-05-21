@@ -1,3 +1,8 @@
+<div align="center">
+<img width="700" height=auto alt="Copy of Self-Host" src="https://github.com/user-attachments/assets/64bc59c4-3422-4a1e-a64f-ba0c36b9045d" />
+
+</div>
+
 ## Self Host Repo
 Welcome to my repo! <br>
 <br>
