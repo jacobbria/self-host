@@ -20,6 +20,8 @@ are many - and because the Debian build is simplier.
 <div align="center">
 
   ### Figure 1: CPU Resources Used
+  <img width="771" height="217" alt="image" src="https://github.com/user-attachments/assets/2124b5bc-e264-4919-b540-40a7dad56a06" />
+
 
 </div>
 
