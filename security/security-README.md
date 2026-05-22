@@ -34,6 +34,8 @@
 <div align="center">
 
   [SIEM Deployment](threatdetection_steps/Wazuh.md)
+  [Agent Deployment](threatdetection_steps/AgentDeployment.md)
+  
 </div>
 </details>
 
