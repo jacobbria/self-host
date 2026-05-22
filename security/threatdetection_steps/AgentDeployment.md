@@ -51,4 +51,25 @@ Wazuh by default will collect logs found in Event Viewer - Security, Application
   | | | |
 </div>
 
+------------
+
+<div align="center">
+  
+  ### Linux
+
+<img width="1000" height=auto alt="download" src="https://github.com/user-attachments/assets/6971896e-10bc-4357-ae87-8d7b6979eccb" />
+
+
+</div>
+
+<div align="center">
+
+  ### Table 2: Additional Linux Logging
+  | Log Type | Reason for Including | Location |
+  | --- | --- | --- | 
+  |  |  |  |
+  | | | |
+  | | | |
+</div>
+
 
