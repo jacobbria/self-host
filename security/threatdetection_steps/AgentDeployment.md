@@ -20,6 +20,8 @@
 <img width="1024" height="320" alt="01192022_Blog_Web_Banner_1200_x_320" src="https://github.com/user-attachments/assets/8287907e-c837-4a29-ba02-9a091ed91d8c" />
 </div>
 
+Wazuh by default will collect logs found in Event Viewer - Security, Application, System. However, we will want additional logs monitored. Below is a table of additional logs and why they were chosen.
+
 <div align="center">
 
   ### Table 2: Additional Windows Logging
