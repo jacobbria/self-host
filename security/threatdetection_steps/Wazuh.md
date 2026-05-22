@@ -32,7 +32,7 @@ with the army you have not the army you want. We are working with existing and r
 - [x] Install Agent(s) on macOS
 - [x] Install Agent(s) on Linux OS
 
-> NOTE: Configuration, log analysis, and alerts are covered in a separate page.
+> NOTE: Configuration, log analysis, and alerts are covered in separate pages
   
 -------------------
 <div align="center">
