@@ -12,7 +12,7 @@
   
 <div align="center">
   
-[NIST 800-30 Risk Assessment](/800-30.md)
+[NIST 800-30 Risk Assessment](800-30.md)
 </div>
 </details>
 
@@ -20,7 +20,7 @@
 <summary><b> Vulnerability Management </b></summary>
 <div align="center">
   
-[Vulnerability Scanning](/Vulnerability-Scanning.md)
+[Vulnerability Scanning](Vulnerability-Scanning.md)
 </div>
 </details>
 
@@ -31,7 +31,7 @@
 <summary><b> Threat Detection/Monitoring </b></summary>
 <div align="center">
 
-  [Wazuh Installation](/threatdetection_steps/Wazuh.md)
+  [SIEM Deployment](threatdetection_steps/Wazuh.md)
 </div>
 </details>
 
