@@ -33,7 +33,7 @@
 <summary><b> Threat Detection/Monitoring </b></summary>
 <div align="center">
 
-  [SIEM Deployment](threatdetection_steps/Wazuh.md)
+  [SIEM Deployment](threatdetection_steps/Wazuh.md) </br>
   [Agent Deployment](threatdetection_steps/AgentDeployment.md)
   
 </div>
