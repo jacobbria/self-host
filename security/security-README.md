@@ -27,6 +27,17 @@
   
 </div>
 
+<details>
+<summary><b> Threat Detection/Monitoring </b></summary>
+<div align="center">
+
+  [Wazuh Installation]( )
+</div>
+</details>
+
+  
+</div>
+
 ------------------
 ### Goals
 - [ ] Deploy SIEM & XDR to monitor network endpoints
