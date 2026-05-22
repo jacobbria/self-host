@@ -20,15 +20,33 @@
 <img width="1024" height="320" alt="01192022_Blog_Web_Banner_1200_x_320" src="https://github.com/user-attachments/assets/8287907e-c837-4a29-ba02-9a091ed91d8c" />
 </div>
 
-
-The Wazuh agent by default will track log types found in Event Viewer - Application, Security, System.
-There are additional logs to be sent back to the Wazuh server. Below are logs and why they are chose.
 <div align="center">
 
-  ### Table 1: Additional Logging By Agent
+  ### Table 2: Additional Windows Logging
   | Log Type | Reason for Including | Location |
   | --- | --- | --- | 
   | PowerShell | Pevent Living-off-the-Land or fileless execution | Microsoft-Windows-PowerShell/Operational |
   | Sysmon | More in depth monitoring of network activites, account creation, etc | |
   | Defender/Firewall | Will show when defences were activated OR not activated | |
 </div>
+
+------------
+
+<div align="center">
+  
+  ### macOS Agent
+<img width="1920" height="480" alt="macos_banner_tv" src="https://github.com/user-attachments/assets/faf08735-f1cd-4513-8f58-57b8bb04a4f0" />
+
+</div>
+
+<div align="center">
+
+  ### Table 1: Additional macOS Logging
+  | Log Type | Reason for Including | Location |
+  | --- | --- | --- | 
+  |  |  |  |
+  | | | |
+  | | | |
+</div>
+
+
