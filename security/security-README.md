@@ -31,7 +31,7 @@
 <summary><b> Threat Detection/Monitoring </b></summary>
 <div align="center">
 
-  [Wazuh Installation]( )
+  [Wazuh Installation](/threatdetection_steps/Wazuh.md)
 </div>
 </details>
 
