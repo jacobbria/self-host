@@ -16,7 +16,7 @@
 
 <div align="center">
   
-  ### Windows Agent
+  ### Windows
 <img width="1024" height="320" alt="01192022_Blog_Web_Banner_1200_x_320" src="https://github.com/user-attachments/assets/8287907e-c837-4a29-ba02-9a091ed91d8c" />
 </div>
 
@@ -34,7 +34,7 @@
 
 <div align="center">
   
-  ### macOS Agent
+  ### macOS
 <img width="1920" height="480" alt="macos_banner_tv" src="https://github.com/user-attachments/assets/faf08735-f1cd-4513-8f58-57b8bb04a4f0" />
 
 </div>
