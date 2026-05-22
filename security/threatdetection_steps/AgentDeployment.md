@@ -24,7 +24,7 @@ Wazuh by default will collect logs found in Event Viewer - Security, Application
 
 <div align="center">
 
-  ### Table 2: Additional Windows Logging
+  ### Table 1: Additional Windows Logging
   | Log Type | Reason for Including | Location |
   | --- | --- | --- | 
   | PowerShell | Pevent Living-off-the-Land or fileless execution | Microsoft-Windows-PowerShell/Operational |
@@ -43,7 +43,7 @@ Wazuh by default will collect logs found in Event Viewer - Security, Application
 
 <div align="center">
 
-  ### Table 1: Additional macOS Logging
+  ### Table 2: Additional macOS Logging
   | Log Type | Reason for Including | Location |
   | --- | --- | --- | 
   |  |  |  |
