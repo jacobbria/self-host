@@ -39,9 +39,6 @@
 </div>
 </details>
 
-  
-</div>
-
 <details>
 <summary><b> Remediation </b></summary>
 <div align="center">
@@ -50,6 +47,11 @@
   
 </div>
 </details>
+
+  
+</div>
+
+
 
   
 </div>
