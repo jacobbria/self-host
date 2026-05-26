@@ -42,6 +42,18 @@
   
 </div>
 
+<details>
+<summary><b> Remediation </b></summary>
+<div align="center">
+
+  [Benchmark Remediation](remediation/Benchmark-Remediation.md) </br>
+  
+</div>
+</details>
+
+  
+</div>
+
 ------------------
 ### Goals
 - [ ] Deploy SIEM & XDR to monitor network endpoints
