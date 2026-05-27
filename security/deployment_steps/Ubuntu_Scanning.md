@@ -30,7 +30,14 @@ In the end the scan was successful.
 <div align="center">
 
   ### Figure 2: Ubuntu Credentialed Scan
-  <img width="1391" height="228" alt="image" src="https://github.com/user-attachments/assets/c414b73a-c623-4111-b878-db45702728cb" />
+  <img width="1390" height="214" alt="image" src="https://github.com/user-attachments/assets/afe6e136-8722-4550-b9cb-13bcacc124cb" />
 
+
+  ### Figure 3: Ubuntu Uncredentialed Scan
+  <img width="1386" height="205" alt="image" src="https://github.com/user-attachments/assets/17d62692-182b-4739-abc3-fc0e325c5b86" />
 
 </div>
+
+### Analysis
+The two scan show us that internal and external scans will show different things about the machine and its vulnerabilties. Now, Figure 2 shows the view of an adversary during Reconnaisance as they try and mp the network. Luckily, with the minimal nature of Ubunu LTS, theres not much to to attack at this stage. Remeditation will hopefully be easily perform in another page.
+
