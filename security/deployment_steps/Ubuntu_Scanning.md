@@ -41,7 +41,7 @@ In the end the scans were successful.
 ### Analysis
 The two scan show us that internal and external scans will show different things about the machine and its vulnerabilties. Now, Figure 2 shows the view of an adversary during Reconnaisance as they try and mp the network. Luckily, with the minimal nature of Ubunu LTS, theres not much to to attack at this stage. Remeditation will hopefully be easily perform in another page. </br>
 </br>
-An interesting thing to compare are the Nessus scans (both internal and external) to Wazuhs SCA benchmark (see Figure 2, Figure 3, and Figure 4). 
+An interesting thing to compare are the Nessus scans (both internal and external) to Wazuhs SCA benchmark (see **Figure 2**, **Figure 3**, and **Figure 4**). 
 
 <div align="center">
 
