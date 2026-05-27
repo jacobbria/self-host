@@ -25,7 +25,7 @@ are many - and because the Debian build is simplier.
 
 </div>
 
-In the end the scan was successful.
+In the end the scans were successful.
 
 <div align="center">
 
@@ -39,5 +39,15 @@ In the end the scan was successful.
 </div>
 
 ### Analysis
-The two scan show us that internal and external scans will show different things about the machine and its vulnerabilties. Now, Figure 2 shows the view of an adversary during Reconnaisance as they try and mp the network. Luckily, with the minimal nature of Ubunu LTS, theres not much to to attack at this stage. Remeditation will hopefully be easily perform in another page.
+The two scan show us that internal and external scans will show different things about the machine and its vulnerabilties. Now, Figure 2 shows the view of an adversary during Reconnaisance as they try and mp the network. Luckily, with the minimal nature of Ubunu LTS, theres not much to to attack at this stage. Remeditation will hopefully be easily perform in another page. </br>
+</br>
+An interesting thing to compare are the Nessus scans (both internal and external) to Wazuhs SCA benchmark (see Figure 2, Figure 3, and Figure 4). 
+
+<div align="center">
+
+  ### Figure 4: Wazuh Ubuntu 
+  <img width="1891" height="364" alt="image" src="https://github.com/user-attachments/assets/025e6ca3-0a8b-481f-8d3d-9ac8ccafe9db" />
+
+
+</div>
 
