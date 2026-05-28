@@ -37,6 +37,7 @@ Deploy locally available resources on a variety of platforms and operating syste
 
 </div>
 <div align="center">
+  
 ### Figure 1: System Architecture Diagram (Hyper V)
 <img width="538" height="298" alt="image" src="https://github.com/user-attachments/assets/f4f1670f-07c3-46b8-840e-b27d20f5ccbb" />
 
