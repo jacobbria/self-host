@@ -28,7 +28,7 @@ Deploy locally available resources on a variety of platforms and operating syste
 > ### Security
 > Hardening, vulnerability management, and SIEM/SOAR implementations are handled separately in the [Security Repository](https://github.com/jacobbria/self-host/blob/main/security/security-README.md).
 
-
+-------------------------------
 <div align="center">
 
   ### System Architecture
@@ -36,16 +36,18 @@ Deploy locally available resources on a variety of platforms and operating syste
 <img width="1000" height="333" alt="1000_F_520180259_ZMN723ALP7xiWuSYTOTlBKxDnqP4493C" src="https://github.com/user-attachments/assets/698e6382-4296-4ebb-892c-409c41be088b" />
 
 </div>
+
+This system will have 2 nodes of different virtualization technology. Their respective stacks can be seen below (**Figure 1** & **Figure 2**) and will be called **Node 1** and **Node 2**.
+
 <div align="center">
   
-### Figure 1: System Architecture Diagram (Hyper-V)
+### Figure 1: System Architecture Diagram (Node 1)
 <img width="538" height="298" alt="image" src="https://github.com/user-attachments/assets/f4f1670f-07c3-46b8-840e-b27d20f5ccbb" />
 
-### Figure 2: System Architecture Diagram (Proxmox)
-<img width="429" height="390" alt="image" src="https://github.com/user-attachments/assets/563e8f9f-e61f-4965-b366-17c585f1d2c0" />
+### Figure 2: System Architecture Diagram (Node 2)
+<img width="420" height="400" alt="image" src="https://github.com/user-attachments/assets/97727f30-4723-452c-898e-9fb76304cc6a" />
 
 
-  
 </div>
 
 
