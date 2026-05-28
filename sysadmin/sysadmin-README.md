@@ -29,3 +29,18 @@ Deploy locally available resources on a variety of platforms and operating syste
 > Hardening, vulnerability management, and SIEM/SOAR implementations are handled separately in the [Security Repository](https://github.com/jacobbria/self-host/blob/main/security/security-README.md).
 
 
+<div align="center">
+
+  ### System Architecture
+
+<img width="1000" height="333" alt="1000_F_520180259_ZMN723ALP7xiWuSYTOTlBKxDnqP4493C" src="https://github.com/user-attachments/assets/698e6382-4296-4ebb-892c-409c41be088b" />
+
+</div>
+<div align="center">
+### Figure 1: System Architecture Diagram (Hyper V)
+<img width="538" height="298" alt="image" src="https://github.com/user-attachments/assets/f4f1670f-07c3-46b8-840e-b27d20f5ccbb" />
+
+  
+</div>
+
+
