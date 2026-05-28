@@ -37,7 +37,7 @@ Deploy locally available resources on a variety of platforms and operating syste
 
 </div>
 
-This system will have 2 nodes of different virtualization technology. Their respective stacks can be seen below (**Figure 1** & **Figure 2**) and will be called **Node 1** and **Node 2**.
+This system will have 2 nodes of different virtualization technology. Their respective stacks can be seen below (**Figure 1** & **Figure 2**) and will be called **Node 1** and **Node 2**. Node 2 is reclaimed hardware and Node 1 is a dedicated server.
 
 <div align="center">
   
