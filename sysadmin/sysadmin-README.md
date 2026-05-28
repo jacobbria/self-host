@@ -38,8 +38,12 @@ Deploy locally available resources on a variety of platforms and operating syste
 </div>
 <div align="center">
   
-### Figure 1: System Architecture Diagram (Hyper V)
+### Figure 1: System Architecture Diagram (Hyper-V)
 <img width="538" height="298" alt="image" src="https://github.com/user-attachments/assets/f4f1670f-07c3-46b8-840e-b27d20f5ccbb" />
+
+### Figure 2: System Architecture Diagram (Proxmox)
+<img width="429" height="390" alt="image" src="https://github.com/user-attachments/assets/563e8f9f-e61f-4965-b366-17c585f1d2c0" />
+
 
   
 </div>
