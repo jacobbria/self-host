@@ -28,6 +28,9 @@ Deploy locally available resources on a variety of platforms and operating syste
 > ### Security
 > Hardening, vulnerability management, and SIEM/SOAR implementations are handled separately in the [Security Repository](https://github.com/jacobbria/self-host/blob/main/security/security-README.md).
 
+### Windows Admin
+- [ ] 
+
 -------------------------------
 <div align="center">
 
