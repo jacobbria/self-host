@@ -23,6 +23,7 @@
 <div align="center">
   
 [Vulnerability Scanning](Vulnerability-Scanning.md)
+[Network Discovery](Network-Discovery.md)
 </div>
 </details>
 
