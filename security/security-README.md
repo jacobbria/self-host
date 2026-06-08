@@ -22,7 +22,7 @@
 <summary><b> Vulnerability Management </b></summary>
 <div align="center">
   
-[Vulnerability Scanning](Vulnerability-Scanning.md)
+[Vulnerability Scanning](Vulnerability-Scanning.md) </br>
 [Network Discovery](Network-Discovery.md)
 </div>
 </details>
