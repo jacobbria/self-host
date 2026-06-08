@@ -40,6 +40,6 @@ First scan is below... </br>
 nmap -sn -PR -n <local_ip_range>/24
 ```
 </div>
-_-sn_: Dont use ping (Default) </br>
-_-PR_: Use ARP </br>
-_-n_: Do not use reverse DNS request (Default) </br>
+-sn: Dont use ping (Default) </br>
+-PR: Use ARP </br>
+-n: Do not use reverse DNS request (Default) </br>
