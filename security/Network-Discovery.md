@@ -48,6 +48,9 @@ nmap -sn -PR -n <local_ip_range>/24
 ### Figure 2: ARP Nmap Results
 <img width="876" height="796" alt="image" src="https://github.com/user-attachments/assets/5034cea8-de7d-4fbb-8f6d-47ecfcea765a" />
 
+### Figure 3: ARP Zenmap Results
+<img width="726" height="613" alt="image" src="https://github.com/user-attachments/assets/4beb1d90-0ba7-4573-8e82-5433349d18e8" />
+
 
 </div>
 
