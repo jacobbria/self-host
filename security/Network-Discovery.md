@@ -43,3 +43,11 @@ nmap -sn -PR -n <local_ip_range>/24
 -sn: Dont use ping (Default) </br>
 -PR: Use ARP </br>
 -n: Do not use reverse DNS request (Default) </br>
+<div align="center">
+
+### Figure 2: ARP Nmap Results
+<img width="876" height="796" alt="image" src="https://github.com/user-attachments/assets/5034cea8-de7d-4fbb-8f6d-47ecfcea765a" />
+
+
+</div>
+
