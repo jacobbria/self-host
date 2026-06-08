@@ -20,3 +20,14 @@ We will also monitor the scan via Wireshark - this provides greater insight into
 - [ ] Deploy and run network discovery scan via Nessus
 - [ ] Compare results (manual and direct)
 - [ ] Detect these scan via Wireshark
+
+<div align="center">
+
+## Nmap
+<img width="1000" height="333" alt="image" src="https://github.com/user-attachments/assets/ccca0d36-6abe-49a0-b9a0-fa026010b393" />
+ 
+</div>
+
+> Commands used will be explain for authors sake.
+### ARP Scan
+ARP scanning is a great way to discovery devices on the local network: ARP is require for all devices to communicate (Exlcuding APIPA), it bypassed ICMP/Ping blocks, and ignores firewall issues. 
