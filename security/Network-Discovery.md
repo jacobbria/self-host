@@ -16,8 +16,8 @@ The network is a small home network which should allow for a stream-lined proces
 We will also monitor the scan via Wireshark - this provides greater insight into the process and assist with passing the Cysa+ exam. 
 
 ### Goals
-- [ ] Deploy and run network discovery scan via Nmap
-- [ ] Deploy and run network discovery scan via Nessus
+- [x] Deploy and run network discovery scan via Nmap
+- [x] Deploy and run network discovery scan via Nessus
 - [ ] Compare results (manual and direct)
 - [ ] Detect these scan via Wireshark
 
