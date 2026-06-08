@@ -43,6 +43,7 @@ nmap -sn -PR -n <local_ip_range>/24
 -sn: Dont use ping (Default) </br>
 -PR: Use ARP </br>
 -n: Do not use reverse DNS request (Default) </br>
+
 <div align="center">
 
 ### Figure 2: ARP Nmap Results
@@ -51,6 +52,40 @@ nmap -sn -PR -n <local_ip_range>/24
 ### Figure 3: ARP Zenmap Results
 <img width="726" height="613" alt="image" src="https://github.com/user-attachments/assets/4beb1d90-0ba7-4573-8e82-5433349d18e8" />
 
+</div>
+
+### TCP and OS Fingerprint
+Lets take a look and see if these devices have open TCP ports open and if we can grab information about the systems
+operating systems. </br> </br>
+
+<div align="center">
+
+### Figure 4: TCP/OS Nmap Results (Ubuntu)
+<img width="946" height="308" alt="image" src="https://github.com/user-attachments/assets/ba365ae1-d10c-49ff-b7a4-fb7e093c82d6" />
 
 </div>
+These scans are interesting to look at. You can look the nmap scan here and find out the details about this Ubuntu machine: Notice the MAC address is guessed to be Microft? The Ubuntu machine is a VM on a Hyper-V hypervisor. You can see the several web services open for deployed VM's on the Ubuntu server. It being 1 hop away make sense - its on the local network.
+
+
+-------------------------------
+
+<div align="center">
+  
+  ## Nessus
+<img width="890" height="276" alt="image" src="https://github.com/user-attachments/assets/02afdb6f-9ae0-43c4-8ad3-a4b49834cd4e" />
+
+</div>
+
+Sad news with Nessus: the free version limits you to 5 unique IP's. So a full network discovery is not possible.
+In lieu of the scan below are screenshots of the scans.
+
+<div align="center">
+
+### Figure : ARP Nessus Scan
+<img width="1128" height="656" alt="image" src="https://github.com/user-attachments/assets/97f074af-cba8-4ec5-8fb1-83716382f2b8" />
+
+
+</div>
+
+
 
