@@ -60,7 +60,12 @@ operating systems. </br> </br>
 
 <div align="center">
 
-### Figure 4: TCP/OS Nmap Results (Ubuntu)
+### Figure 4: Nmap TCP/OS Command
+```bash
+nmap -sT -n -O <local_ip_range>/24
+```
+
+### Figure 5: TCP/OS Nmap Results (Ubuntu)
 <img width="946" height="308" alt="image" src="https://github.com/user-attachments/assets/ba365ae1-d10c-49ff-b7a4-fb7e093c82d6" />
 
 </div>
@@ -81,7 +86,7 @@ In lieu of the scan below are screenshots of the scans.
 
 <div align="center">
 
-### Figure : ARP Nessus Scan
+### Figure 6: ARP Nessus Scan
 <img width="1128" height="656" alt="image" src="https://github.com/user-attachments/assets/97f074af-cba8-4ec5-8fb1-83716382f2b8" />
 
 
