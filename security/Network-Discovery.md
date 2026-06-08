@@ -30,4 +30,16 @@ We will also monitor the scan via Wireshark - this provides greater insight into
 
 > Commands used will be explain for authors sake.
 ### ARP Scan
-ARP scanning is a great way to discovery devices on the local network: ARP is require for all devices to communicate (Exlcuding APIPA), it bypassed ICMP/Ping blocks, and ignores firewall issues. 
+ARP scanning is a great way to discovery devices on the local network: ARP is require for all devices to communicate (Exlcuding APIPA), it bypassed ICMP/Ping blocks, and ignores firewall issues. </br> </br>
+
+First scan is below... </br>
+<div align="center">
+
+### Figure 1: ARP Nmap Scan
+```bash
+nmap -sn -PR -n <local_ip_range>/24
+```
+</div>
+_-sn_: Dont use ping (Default) </br>
+_-PR_: Use ARP </br>
+_-n_: Do not use reverse DNS request (Default) </br>
