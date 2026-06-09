@@ -69,7 +69,23 @@ nmap -sT -n -O <local_ip_range>/24
 <img width="946" height="308" alt="image" src="https://github.com/user-attachments/assets/ba365ae1-d10c-49ff-b7a4-fb7e093c82d6" />
 
 </div>
-These scans are interesting to look at. You can look the nmap scan here and find out the details about this Ubuntu machine: Notice the MAC address is guessed to be Microft? The Ubuntu machine is a VM on a Hyper-V hypervisor. You can see the several web services open for deployed VM's on the Ubuntu server. It being 1 hop away make sense - its on the local network.
+</div>
+These scans are interesting to look at. You can look the nmap scan here and find out the details about this Ubuntu machine: Notice the MAC address is guessed to be Microft? The Ubuntu machine is a VM on a Hyper-V hypervisor. You can see the several web services open for deployed VM's on the Ubuntu server. It being 1 hop away make sense - its on the local network. </br> </br> 
+
+<div align="center">
+
+### Figure 4: Nmap TCP/OS Command
+```bash
+nmap -sT -n -O <local_ip_range>/24
+```
+
+### Figure 6: Windows Results 
+<img width="792" height="377" alt="image" src="https://github.com/user-attachments/assets/74dd77c9-4872-4d73-8788-96409ca3d046" />
+
+</div>
+</div>
+</div>
+That NetBIOS open port is staring at me. [NetBIOS[(https://www.techtarget.com/searchnetworking/definition/NetBIOS), a classic CompTIA exam item, is a legacy protocol that serves as a common [attack vector](https://www.crowe.com/insights/crowe-cyber-watch/netbios-llmnr-giving-away-credentials). It really doesnt serve a purpose anymore and will need to be closed down. That process can be found [here]( ) in system hardening.
 
 
 -------------------------------
@@ -88,6 +104,7 @@ In lieu of the scan below are screenshots of the scans.
 
 ### Figure 6: ARP Nessus Scan
 <img width="1128" height="656" alt="image" src="https://github.com/user-attachments/assets/97f074af-cba8-4ec5-8fb1-83716382f2b8" />
+
 
 
 </div>
