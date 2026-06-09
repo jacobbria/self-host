@@ -83,9 +83,8 @@ nmap -sT -n -O <local_ip_range>/24
 <img width="792" height="377" alt="image" src="https://github.com/user-attachments/assets/74dd77c9-4872-4d73-8788-96409ca3d046" />
 
 </div>
-</div>
-</div>
-That NetBIOS open port is staring at me. [NetBIOS[(https://www.techtarget.com/searchnetworking/definition/NetBIOS), a classic CompTIA exam item, is a legacy protocol that serves as a common [attack vector](https://www.crowe.com/insights/crowe-cyber-watch/netbios-llmnr-giving-away-credentials). It really doesnt serve a purpose anymore and will need to be closed down. That process can be found [here]( ) in system hardening.
+
+That NetBIOS open port is staring at me. [NetBIOS](https://www.techtarget.com/searchnetworking/definition/NetBIOS), a classic CompTIA exam item, is a legacy protocol that serves as a common [attack vector](https://www.crowe.com/insights/crowe-cyber-watch/netbios-llmnr-giving-away-credentials). It really doesnt serve a purpose anymore and will need to be closed down. That process can be found [here]( ) in system hardening.
 
 
 -------------------------------
