@@ -10,26 +10,21 @@
 ### Goal
 Deploy locally available resources on a variety of platforms and operating systems. Monitor these systems, get comfortable troubleshooting, automate deployment with Infrastructure-as-Code (IaC) when possible, and back up systems for Disaster Recovery (DR) and security purposes. Specific objectives for each sub-category are detailed below.
 
+### Windows Administration
+- [ ] Deploy local AD DS network
+- [x] Deploy and Manage Windows Hyper-V node
+- [ ] Pass Applied Skills assessment lab: Administer Active Directory Domain Services
+
+Virtualization
+- [x] Deploy Proxmox Hypervisor node
+- [x] Connect VM's/Docker instances using NAT
+
 ### Automation
-- [ ] Maintain optimized baseline templates/images for Linux (Ubuntu) nodes
-- [ ] Leverage Terraform and Ansible to provision local VMs and containers dynamically
+- [ ] Deploy Ansible for golden-image linux machine deployment
 
-### Configuration Management
-- [ ] Create and maintain a baseline Ansible playbook for standardized Linux node configuration
-
-### High-Availability & Backups
-- [ ] Automate local backups adhering to a strict 3-2-1 strategy
-- [ ] Create automated alerting thresholds for proactive resource and hardware management
-
-### Monitoring
-- [ ] Centralize resource visibility into a single pane of glass
-- [ ] Implement Monitoring-as-Code (MaC) via the Zabbix API to ensure consistent, durable, and code-driven monitoring deployments
-
-> ### Security
-> Hardening, vulnerability management, and SIEM/SOAR implementations are handled separately in the [Security Repository](https://github.com/jacobbria/self-host/blob/main/security/security-README.md).
-
-### Windows Admin
-- [ ] 
+### Security
+- [ ] Perform benchmark analysis of machine
+- [ ] Harden machines based on vulnerabiliy assessments
 
 -------------------------------
 <div align="center">
