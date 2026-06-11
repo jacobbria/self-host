@@ -23,7 +23,7 @@ Virtualization
 - [ ] Deploy Ansible for golden-image linux machine deployment
 
 ### Security
-- [ ] Perform benchmark analysis of machine
+- [x] Perform benchmark analysis of machine
 - [ ] Harden machines based on vulnerabiliy assessments
 
 -------------------------------
