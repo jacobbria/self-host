@@ -67,10 +67,9 @@
 
 ------------------
 ### Goals
-- [ ] Deploy SIEM & XDR to monitor network endpoints
-- [ ] Deploy scheduled vulnerability management tools
-- [ ] Pass CompTIA CySA+ Certification Exam
-
+- [x] Deploy SIEM & XDR to monitor network endpoints
+- [x] Deploy scheduled vulnerability management tools
+- [ ] Remediate a known vulnerability
 
 
 <div align="center">
