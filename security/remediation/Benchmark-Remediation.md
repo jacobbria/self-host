@@ -29,6 +29,7 @@ Wazuh has default [Security Configuration Assessments (SCA)](https://documentati
 
 
 </div>
+</div>
 
 ### NetBIOS: Remediation
 The [Nmap vulnerability scan](security/Vulnerability-Scanning.md) showed a large security flaw common in Windows machines: [NetBIOS](https://en.wikipedia.org/wiki/NetBIOS). A legacy protocol used for [local device communication](https://wirexsystems.com/resource/protocols/netbios/) it is vector for attackers to laterally move.
