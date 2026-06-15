@@ -27,7 +27,24 @@ Installation of the Windows Server 2022 and Windows 11 ISO were trivial and comp
 Nonetheless, we were able to boot and install both. </br>
 
 ### Server Core
-The first server will 
+The first server will server as the Primary Domain Controller. The follow commands were ran and snapshots taken between. </br>
+
+```bash
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools 
+Install-ADDSDomainController -DomainName "jakebria.com"
+```
+
+I ran the follow tests to ensure my domain controller properly installed
+
+<div align="Center">
+
+### Figure 2: Post-Install Tests
+
+
+
+</div>
+
+It was cool to see the SYSVOL and NETLOGON fileshares. I often interact with troubleshooting client side issues of these. I was familiar with the process of endpoints logging in to check their scripts/GPO but this showed me the internal plumming behind it. 
 
 
 You can see a jump in system resource usage after the install. No suprise there but it is something I need to keep an eye on and ensure [Zabbix sends alerts](google.com) if resources becomes too in demand for too long.
