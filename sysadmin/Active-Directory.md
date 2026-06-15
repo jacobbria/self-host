@@ -14,8 +14,18 @@ The steps to get a working Active Directory (AD) environment are as follows
 
 ### Installation
 
-Installation of the Windows Server 2022 and Windows 11 ISO were trivial and comparable to Proxmox and Ubuntu. One interesting hurdle I found was both ISO's would allow me to use my installation media/DVD if Secure Boot was enabled. I was suprised, as Ubuntu simply required changing the Seucre Boot from Windows to Microsoft EUFI Cert. Authority. Even Microsofts documentation states... <br>
-'
+Installation of the Windows Server 2022 and Windows 11 ISO were trivial and comparable to Proxmox and Ubuntu. One interesting hurdle I found was both ISO's would allow me to use my installation media/DVD if Secure Boot was enabled. I was suprised, as Ubuntu simply required changing the Seucre Boot from Windows to Microsoft EUFI Cert. Authority. Even [Microsofts documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/generation-2-virtual-machine-security-features) states it should be compatible.
+
+<div align="Center">
+
+### Figure 1: MS Documentation (Secure Boot)
+<img width="531" height="172" alt="image" src="https://github.com/user-attachments/assets/9eafb46a-9d27-4ba7-9bc6-c08a4b45411d" />
+
+
+</div>
+
+Nonetheless, we were able to boot and install both. </br>
+
 
 You can see a jump in system resource usage after the install. No suprise there but it is something I need to keep an eye on and ensure [Zabbix sends alerts](google.com) if resources becomes too in demand for too long.
 
