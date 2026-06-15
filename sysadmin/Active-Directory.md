@@ -5,8 +5,8 @@
 </div>
 
 The steps to get a working Active Directory (AD) environment are as follows
-- [X] Deploy Windows Server 2022 (Server Core) via Hypervisor (Hyper V)
-- [X] Install AD DS Services and Configure (This [guide](https://gal.vin/domain-controller-windows-server-core-walkthrough/) was used)
+- [X] Deploy Windows Server 2022 (Server Core) via Hypervisor (_Hyper V_)
+- [X] Install AD DS Services and Configure (_This [guide](https://gal.vin/domain-controller-windows-server-core-walkthrough/) was used_)
 - [X] Deploy Windows 11 Admin VM
 - [ ] Install and configure RSAT Tools 
 
