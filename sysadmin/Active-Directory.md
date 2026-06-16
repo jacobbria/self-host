@@ -39,7 +39,7 @@ I ran the follow tests to ensure my domain controller properly installed
 <div align="Center">
 
 ### Figure 2: Post-Install Tests
-
+<img width="1236" height="672" alt="Screenshot 2026-06-15 143524" src="https://github.com/user-attachments/assets/9d799845-ded5-4944-8e3f-ec1a60ddc001" />
 
 
 </div>
@@ -55,8 +55,28 @@ You can see a jump in system resource usage after the install. No suprise there 
 <img width="492" height="162" alt="image" src="https://github.com/user-attachments/assets/410daafd-2eac-425d-83e8-9ead08bc8e1e" />
 <img width="545" height="168" alt="image" src="https://github.com/user-attachments/assets/3b9e655d-4c0b-4bb7-8c6b-948ef3010b10" />
 
+</div>
+
+I tried to run the command [Microsoft recommends in their documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/join-computer-to-domain?tabs=cmd&pivots=windows-server-2025) to join the Windows 11 Pro (called Admin-VM-1) booted up and ran into some issues. It repeated that it couldnt find my domain (_jakebria.com_). I went into the metwork adapter and changed the primary DNS server to be the DC server itself (which mirrors how it should be set up anyways).
+
+<div align="center">
+  
+### Figure 3: DNS Troubleshooting
+<img width="1442" height="347" alt="image" src="https://github.com/user-attachments/assets/3a252092-1085-40d6-b939-0e6dc3efc6bb" />
+<img width="992" height="197" alt="image" src="https://github.com/user-attachments/assets/872b2a1f-69c9-4e58-8cdd-d5d1625ea0e0" />
+
+</div>
+
+Even with pointing the DNS queries to my DC it still would not find my domain. When specifically querying (see **Figure 3**) it was able to find my domain. The issue (thank you Gemini) appeared to be IPv6. When disabling IPv6 in the network adapter on the endpoint it was able to find, and the join, the domain success (see **Figure 4**).
+
+<div align="center">
+
+### Figure 4: Domain Join
+<img width="1397" height="597" alt="image" src="https://github.com/user-attachments/assets/a787dc02-ae4b-45c4-b9f8-285f2735a366" />
+<img width="656" height="287" alt="image" src="https://github.com/user-attachments/assets/9fa9010c-8511-4a44-b288-25acc67d7aad" />
 
 
 </div>
+
 
 
