@@ -67,7 +67,7 @@ I tried to run the command [Microsoft recommends in their documentation](https:/
 
 </div>
 
-Even with pointing the DNS queries to my DC it still would not find my domain. When specifically querying (see **Figure 3**) it was able to find my domain. The issue (thank you Gemini) appeared to be IPv6. When disabling IPv6 in the network adapter on the endpoint it was able to find, and the join, the domain success (see **Figure 4**).
+Even with pointing the DNS queries to my DC it still would not find my domain. When specifically querying (see **Figure 3**) it was able to find my domain. The issue (thank you Gemini) appeared to be IPv6. When disabling IPv6 in the network adapter on the endpoint it was able to find, and the join, the domain success (see **Figure 4**). 
 
 <div align="center">
 
