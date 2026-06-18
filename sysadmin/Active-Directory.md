@@ -78,5 +78,7 @@ Even with pointing the DNS queries to my DC it still would not find my domain. W
 
 </div>
 
+### RSAT Tools
+Managing the Active Directory and Domain Controller from an endpoint is a common task - we dont need to be remoting into our DC everytime we need to add user. On Admin-1 we will use [this guide](https://windowsforum.com/threads/how-to-install-active-directory-tools-on-windows-11-complete-guide-for-it-pros.361871/) - totally written by AI - to get the tools installed. A little click-ops later using Windows Optional Feature and we added the tools. 
 
 
