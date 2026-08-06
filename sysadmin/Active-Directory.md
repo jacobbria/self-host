@@ -38,7 +38,7 @@ The first server will server as the Primary Domain Controller. The following com
 
 ```bash
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools 
-Install-ADDSDomainController -DomainName "jakebria.com"
+Install-ADDSDomainController -DomainName "atreides.local"
 ```
 
 I ran the following tests to ensure my domain controller properly installed
@@ -46,7 +46,7 @@ I ran the following tests to ensure my domain controller properly installed
 <div align="Center">
 
 ### Figure 2: Post-Install Tests
-<img width="1236" height="672" alt="Screenshot 2026-06-15 143524" src="https://github.com/user-attachments/assets/9d799845-ded5-4944-8e3f-ec1a60ddc001" />
+<img width="1236" height="672" alt="image" src="https://github.com/user-attachments/assets/7c66d0c9-83e9-4a39-a229-07ed48bd4605" />
 
 
 </div>
@@ -74,8 +74,8 @@ I tried to run the command [Microsoft recommends in their documentation](https:/
 <div align="center">
   
 ### Figure 3: DNS Troubleshooting
-<img width="1442" height="347" alt="image" src="https://github.com/user-attachments/assets/3a252092-1085-40d6-b939-0e6dc3efc6bb" />
-<img width="992" height="197" alt="image" src="https://github.com/user-attachments/assets/872b2a1f-69c9-4e58-8cdd-d5d1625ea0e0" />
+<img width="758" height="243" alt="image" src="https://github.com/user-attachments/assets/d4f14bf9-63b7-4679-bb17-752949232cd9" />
+
 
 </div>
 
@@ -84,8 +84,9 @@ Even with pointing the DNS queries to my DC it still would not find my domain. W
 <div align="center">
 
 ### Figure 4: Domain Join
-<img width="1397" height="597" alt="image" src="https://github.com/user-attachments/assets/a787dc02-ae4b-45c4-b9f8-285f2735a366" />
-<img width="656" height="287" alt="image" src="https://github.com/user-attachments/assets/9fa9010c-8511-4a44-b288-25acc67d7aad" />
+<img width="636" height="349" alt="image" src="https://github.com/user-attachments/assets/cdf79283-c16a-4fe2-a441-45c11983439d" />
+<img width="693" height="107" alt="image" src="https://github.com/user-attachments/assets/4577e327-56f9-4ece-987b-748211aa90f8" />
+
 </div>
 
 </div>
