@@ -87,42 +87,41 @@ Even with pointing the DNS queries to my DC it still would not find my domain. W
 <img width="636" height="349" alt="image" src="https://github.com/user-attachments/assets/cdf79283-c16a-4fe2-a441-45c11983439d" />
 <img width="693" height="107" alt="image" src="https://github.com/user-attachments/assets/4577e327-56f9-4ece-987b-748211aa90f8" />
 
-</div>
-
-</div>
-</details>
-
-
-<details>
-<summary><strong>RSAT Tools</strong></summary
-Managing the Active Directory and Domain Controller from an endpoint is a common task - we dont need to be remoting into our DC everytime we need to add user. On Admin-1 we will use [this guide](https://windowsforum.com/threads/how-to-install-active-directory-tools-on-windows-11-complete-guide-for-it-pros.361871/) - totally written by AI - to get the tools installed. A little click-ops later using Windows Optional Feature and we added the tools.  </br> </br>
-
-<div align="center">
-
-### Figure 5: RSAT Tools
-<img width="850" height="545" alt="image" src="https://github.com/user-attachments/assets/0097c795-d0f5-4b3b-980e-dad048316f9d" />
-<img width="1051" height="735" alt="image" src="https://github.com/user-attachments/assets/cd7c2003-24b0-48a1-9cff-c4d965ca5584" />
 
 </div>
 
+</div>
 </details>
 
 
 <details>
 <summary><strong>GPO</strong></summary
-The entire reason we went through this domain join process, and the selling point of AD, is to manage these devices and enforce rules (policies). So, we will start basic with a simple wallpaper GPO to ensure all our workstations have a nice uniform and coorporate look: a pixated wallpaper. I placed this wallpaper (_norway.png_) inside \scripts on the DC. This is where our devices will look to for scripts so it felt like a natural home. </br> </br>
+ </br> </br>
+With our functional AD-DS and domain joined devices we can now start to make sure these devices are compliant with business needs. As such, I want to make sure only palace-based employees can access palace devices.
+The best way to accomplish this (besides really strong door locks and constant armed guards) is to use GPO to check all users logging in and only allow approved members. To be specific, we want to use **group-based** access control and not user-based access control. So, we will ensure only specific groups and it associated member may login to the computer. 
 
-Using my shiny new RSAT tools I used ADUC to create several new OUs to place user and computer objects. OU's are the policy driven organizational tool unlike the default containers. I placed the same workstation inside the Workstations OU (subfolder of Computers-OU) which then had a Group Policy applied on it using Group Policy Manager (see **Figure 6**).  </br> </br>
+  </br> </br>
 
-The GPO enforced a wallpaper (pointing the domain controller...\scripts\norway.png) at the User level. To ensure all users had to maintain this we then used the Computer policies to merge in lookback processing mode.
-Ran a quick gpupdate /force command to have the endpoint check in with the DC, sign in/out, and our new background was applied. Enjoy the new views of the Fjords!
+Opening Group Policy editor on a domain-joined device with a domain admin allows us to create, edit, and enforce domains on AD objects. At first I was manually entering which security groups could use the computer. In retrospect, a better method would be to create a Domain Local Security Group - maybe called DL_Palace_Logon - and add Global Groups (Marked by GG_ in the name) in to manage the access. This solution would be  <ul> <li> Easier to manage  <li> Easier to understand <li> Easier to troubleshoot </ul>
+
 
 <div align="center">
 
-### Figure 6: Wallpaper GPO
-<img width="973" height="682" alt="image" src="https://github.com/user-attachments/assets/3643d9db-1249-42e0-be9a-204ad40fb3a5" />
-<img width="905" height="582" alt="image" src="https://github.com/user-attachments/assets/36a7c573-f968-48e1-99c5-5254ca056376" />
-<img width="953" height="965" alt="image" src="https://github.com/user-attachments/assets/053fb2e9-3978-4bf7-a428-7a7db04070b2" />
+ ### Figure 5: Group Policy
+<img width="687" height="277" alt="image" src="https://github.com/user-attachments/assets/ea482d8a-398a-4346-90b7-b8913a758165" />
+<img width="631" height="379" alt="image" src="https://github.com/user-attachments/assets/2f52f2ea-83c3-49c7-ad80-8353d8a81398" />
+</div>
+
+</br>
+
+I did not make that choice, but even with my existing plan I got it to work. Patreides, member of GG_Atreides_Fam, was able to logon while smaples was not (See **Figure 6**)
+
+<div align="center">
+
+ ### Figure 6: Smaples Login Attempt
+<img width="1123" height="766" alt="image" src="https://github.com/user-attachments/assets/4a926b5b-69af-4e78-80ca-4e8dc035be71" />
+</div>
+
 
 </div>
 </details>
