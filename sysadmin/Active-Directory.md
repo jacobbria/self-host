@@ -129,13 +129,24 @@ I did not make that choice, but even with my existing plan I got it to work. Pat
 </br> Everyone needs to access files - especially files they want to share to others. To accomplish this the Atreides family will have a file share that is exclusive to them.
 Using Server Manager I created the file share, hosted on my original DC under its own directory \Shares\Atreides_Share. I have to then decide how to manage both permissions and user access to the file share.
 
-</br> In **GPO** subsection of this page I mentioned a flaw in the style of access control I implemented for access to my workstations. Learning from this, access control will be handed by one Domain Local Security Group - Aptly named DL_AtreideFamilyShare_RW - which will then have users or other groups added. Using Shares > Properties > Security we can then ensure that group can Modify the contents. After which we can test access - patreides can access the share, as can a logged in domain admin, but smaples cannot (See Figure **7**)
+</br> In **GPO** subsection of this page I mentioned a flaw in the style of access control I implemented for access to my workstations. Learning from this, access control will be handed by one Domain Local Security Group - Aptly named DL_AtreideFamilyShare_RW - which will then have users or other groups added. Using Shares > Properties > Security we can then ensure that group can Modify the contents. After which we can test access - patreides can access the share, as can a logged in domain admin, but smaples cannot (See Figure **7**).
 
 <div align="center">
 
  ### Figure 7: Smaples Access Attempt
  <img width="560" height="397" alt="image" src="https://github.com/user-attachments/assets/cb066b68-e2b3-4ee4-a469-6a69dba67808" />
 
+ We can compare this with patreides who, whos permissions are granted from GG_Atreides_Family --> DL_AtreidesFamilyShare_RW, when trying to directly access the share in **Figure 8**. Now, to ensure patrides can access the share consistently we have 2 options - GPO or Logon Script. There is a really good debate about when to use one or the other - I referenced [this](https://community.spiceworks.com/t/why-would-one-use-a-logon-script-for-mapping-drives-rather-than-a-gpo/967674) thread when deciding what to try. My personal experience in enterprise set-ups was using Logon scripts. To challenge myself I tried to implement a GPO based access. However, it did not work cleanly and lead to quite a bit of troubleshooting. In comparison, the logon script worked with no issue. So, in order to keep progress moving I stuck with the logon script which can be seen below and in **Figure 9**.
+
+
+<div align="center">
+
+ ### Figure 8: Patreides File Share Access Attempt
+ <img width="537" height="140" alt="image" src="https://github.com/user-attachments/assets/b4eab377-d44d-4afa-9ea9-ea13c809d64a" />
+
+ ### Figure 9: Patreides AD Profile
+ <img width="250" height="117" alt="image" src="https://github.com/user-attachments/assets/62245930-1fc8-4fa1-b8f3-5c5a5836d47b" />
+</div>
 
  </br> </br>
 
