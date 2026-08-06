@@ -17,7 +17,7 @@ The steps to get a working Active Directory (AD) environment are as follows
 <summary><strong>Installation</strong></summary
 
 
-Installation of the Windows Server 2022 and Windows 11 ISO were trivial and comparable to Proxmox and Ubuntu. One interesting hurdle I found was both ISO's would allow me to use my installation media/DVD if Secure Boot was enabled. I was suprised, as Ubuntu simply required changing the Seucre Boot from Windows to Microsoft EUFI Cert. Authority. Even [Microsofts documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/generation-2-virtual-machine-security-features) states it should be compatible.
+</br>Installation of the Windows Server 2022 and Windows 11 ISO were trivial and comparable to Proxmox and Ubuntu. One interesting hurdle I found was both ISO's would allow me to use my installation media/DVD if Secure Boot was enabled. I was suprised, as Ubuntu simply required changing the Seucre Boot from Windows to Microsoft EUFI Cert. Authority. Even [Microsofts documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/generation-2-virtual-machine-security-features) states it should be compatible.
 
 <div align="Center">
 
@@ -34,7 +34,7 @@ Nonetheless, we were able to boot and install both. </br>
 <details>
 <summary><strong>Domain Controller/Server Core</strong></summary
                                                          
-The first server will server as the Primary Domain Controller. The following commands were ran and snapshots taken between. </br>
+</br> The first server will server as the Primary Domain Controller. The following commands were ran and snapshots taken between. </br>
 
 ```bash
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools 
@@ -69,7 +69,7 @@ You can see a jump in system resource usage after the install. No suprise there 
 <details>
 <summary><strong>Domain Join</strong></summary
                                        
-I tried to run the command [Microsoft recommends in their documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/join-computer-to-domain?tabs=cmd&pivots=windows-server-2025) to join the Windows 11 Pro (called Admin-VM-1) booted up and ran into some issues. It repeated that it couldnt find my domain (_jakebria.com_). I went into the metwork adapter and changed the primary DNS server to be the DC server itself (which mirrors how it should be set up anyways).
+</br> I tried to run the command [Microsoft recommends in their documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/join-computer-to-domain?tabs=cmd&pivots=windows-server-2025) to join the Windows 11 Pro (called Admin-VM-1) booted up and ran into some issues. It repeated that it couldnt find my domain (_jakebria.com_). I went into the metwork adapter and changed the primary DNS server to be the DC server itself (which mirrors how it should be set up anyways).
 
 <div align="center">
   
@@ -122,13 +122,20 @@ I did not make that choice, but even with my existing plan I got it to work. Pat
 <img width="1123" height="766" alt="image" src="https://github.com/user-attachments/assets/4a926b5b-69af-4e78-80ca-4e8dc035be71" />
 </div>
 
+</details>
 
 <details>
 <summary><strong>Fileshare/Logon Script</strong></summary>
-Everyone needs to access files - especially files they want to share to others. To accomplish this the Atreides family will have a file share that is exclusive to them.
+</br> Everyone needs to access files - especially files they want to share to others. To accomplish this the Atreides family will have a file share that is exclusive to them.
 Using Server Manager I created the file share, hosted on my original DC under its own directory \Shares\Atreides_Share. I have to then decide how to manage both permissions and user access to the file share.
 
-In **GPO** subsection of this page I mentioned a flaw in the style of access control I implemented for access to my workstations. Learning from this, access control will be handed by one Domain Local Security Group - Aptly named DL_AtreideFamilyShare_RW - which will then have users or other groups added. 
+</br> In **GPO** subsection of this page I mentioned a flaw in the style of access control I implemented for access to my workstations. Learning from this, access control will be handed by one Domain Local Security Group - Aptly named DL_AtreideFamilyShare_RW - which will then have users or other groups added. Using Shares > Properties > Security we can then ensure that group can Modify the contents. After which we can test access - patreides can access the share, as can a logged in domain admin, but smaples cannot (See Figure **7**)
+
+<div align="center">
+
+ ### Figure 7: Smaples Access Attempt
+ <img width="560" height="397" alt="image" src="https://github.com/user-attachments/assets/cb066b68-e2b3-4ee4-a469-6a69dba67808" />
+
 
  </br> </br>
 
