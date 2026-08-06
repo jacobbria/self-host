@@ -114,13 +114,25 @@ Opening Group Policy editor on a domain-joined device with a domain admin allows
 
 </br>
 
-I did not make that choice, but even with my existing plan I got it to work. Patreides, member of GG_Atreides_Fam, was able to logon while smaples was not (See **Figure 6**)
+I did not make that choice, but even with my existing plan I got it to work. Patreides, member of GG_Atreides_Fam, was able to logon while smaples was not (See **Figure 6**). An example of this being put into place can be found in the proceding subsection below: **Fileshare/Logon**.
 
 <div align="center">
 
  ### Figure 6: Smaples Login Attempt
 <img width="1123" height="766" alt="image" src="https://github.com/user-attachments/assets/4a926b5b-69af-4e78-80ca-4e8dc035be71" />
 </div>
+
+
+<details>
+<summary><strong>Fileshare/Logon Script</strong></summary>
+Everyone needs to access files - especially files they want to share to others. To accomplish this the Atreides family will have a file share that is exclusive to them.
+Using Server Manager I created the file share, hosted on my original DC under its own directory \Shares\Atreides_Share. I have to then decide how to manage both permissions and user access to the file share.
+
+In **GPO** subsection of this page I mentioned a flaw in the style of access control I implemented for access to my workstations. Learning from this, access control will be handed by one Domain Local Security Group - Aptly named DL_AtreideFamilyShare_RW - which will then have users or other groups added. 
+
+ </br> </br>
+
+</details>
 
 
 </div>
