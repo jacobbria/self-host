@@ -11,9 +11,9 @@
 Deploy locally available resources on a variety of platforms and operating systems. Monitor these systems, get comfortable troubleshooting, automate deployment with Infrastructure-as-Code (IaC) when possible, and back up systems for Disaster Recovery (DR) and security purposes. Specific objectives for each sub-category are detailed below.
 
 ### Windows Administration
-- [ ] Deploy local AD DS network
+- [x] Deploy local AD DS network
 - [x] Deploy and Manage Windows Hyper-V node
-- [ ] Pass Applied Skills assessment lab: Administer Active Directory Domain Services
+- [x] Pass Applied Skills assessment lab: Administer Active Directory Domain Services
 
 Virtualization
 - [x] Deploy Proxmox Hypervisor node
@@ -31,7 +31,7 @@ Virtualization
 
   ### System Architecture
 
-<img width="1000" height="333" alt="1000_F_520180259_ZMN723ALP7xiWuSYTOTlBKxDnqP4493C" src="https://github.com/user-attachments/assets/698e6382-4296-4ebb-892c-409c41be088b" />
+<img width="1000" height="333" alt="1000_F_520180259_ZMN723ALP7xiWuSYTOTlBKxDnqP4493C" src="https://github.com/user-attachments/assets/698e6382-4296"https://github.com/user-attachments/assets/698e6382-4296-4ebb-892c-409c41be088b" />"https://github.com/user-attachments/assets/698e6382-4296-4ebb-892c-409c41be088b" />
 
 </div>
 
