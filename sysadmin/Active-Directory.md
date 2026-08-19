@@ -27,7 +27,7 @@ The steps to get a working Active Directory (AD) environment are as follows
 
 </div>
 
-Nonetheless, we were able to boot and install both. </br>
+Nonetheless, we were able to boot and install both operating systems. </br>
 
 </details>
 
